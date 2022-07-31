@@ -79,11 +79,14 @@ export default class TerminalController implements IDisposable {
     });
   }
 
-  setPrompt(prompt: string | (() => string)) {
+  async setPrompt(prompt: string | (() => string)) {
     if (typeof prompt === "string") {
       this.prompt = () => prompt;
     } else {
       this.prompt = prompt;
+    }
+    if (this.inputPhase) {
+      await this.renderInput(false, false);
     }
   }
 

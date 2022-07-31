@@ -1,7 +1,7 @@
 {
   "name": "xterm-local-skeleton",
   "description": "A basic local controller for xterm.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": "beanandbean <wangsw.a@gmail.com>",
   "repository": "github:beanandbean/xterm-local-skeleton",
